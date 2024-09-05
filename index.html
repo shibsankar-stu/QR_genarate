@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Genarate QR Code</h1>
+            <input type="text" id="inputs" placeholder="Enter Text">
+            <div class="sizeinput">
+            <span>Select Size</span>
+            <select id="select">
+                <option value="100">100*100</option>
+                <option value="200">200*200</option>
+                <option value="300">300*300</option>
+                <option value="400">400*400</option>
+                <option value="500">500*500</option>
+                <option value="600">600*600</option>
+                <option value="700">700*700</option>
+                <option value="800">800*800</option>
+                <option value="900">900*900</option>
+                <option value="1000">1000*1000</option>
+            </select>
+        </div>
+
+        <div class="qrboxs">
+            <div id="qrbox"></div>
+        </div>
+
+        <div class="btns">
+            <button type="submit" id="submit" onclick="generateQRCode()">Genarate</button>
+             <button><a download="shib.png" id="downloadbtn">Download</a></button>
+        </div>
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
